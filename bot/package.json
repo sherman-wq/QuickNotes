@@ -1,0 +1,27 @@
+{
+  "name": "quicknotes",
+  "version": "1.0.0",
+  "main": "./dist/src/bot.js",
+  "dependencies": {
+    "@types/node-fetch": "^2.6.2",
+    "config": "^3.3.8",
+    "dotenv": "^16.0.3",
+    "grammy": "^1.11.2",
+    "natural": "^6.10.4",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "ts:build": "tsc -t es5",
+    "prestart": "npm run ts:build",
+    "start": "node dist/src/bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
